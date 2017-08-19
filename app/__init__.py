@@ -7,3 +7,6 @@ app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 db = SQLAlchemy(app)
 
 from app import views, models
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
