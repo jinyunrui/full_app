@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 db = SQLAlchemy(app)
 
-from app import views, models
+from app import views#, models
 
 #if __name__ == '__main__':
 #    app.run(
